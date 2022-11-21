@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#1F1F1F">
+    android:background="#1F1F1F"
+    android:orientation="vertical">
 
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -17,5 +18,12 @@
         app:titleTextColor="#381E72"
         app:title="Заказы"
         />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="8dp"/>
 
 </LinearLayout>
