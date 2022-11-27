@@ -24,7 +24,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginEdittext"
+        android:id="@+id/loginEditText"
         android:layout_below="@+id/loginImage"
         android:layout_marginTop="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -42,8 +42,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/passwordEdittext"
-        android:layout_below="@+id/loginEdittext"
+        android:id="@+id/passwordEditText"
+        android:layout_below="@+id/loginEditText"
         android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginLeft="20dp"
@@ -61,8 +61,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/buttonLogin"
-        android:layout_below="@+id/passwordEdittext"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -73,10 +73,10 @@
         />
 
     <Button
-        android:layout_below="@+id/buttonLogin"
+        android:layout_below="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="Регестрация"
