@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.volunteer;
+package com.example.neighbour.ui.older;
 
 import android.os.Bundle;
 
@@ -6,12 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.neighbour.R;
 
-public class VolunteerActivity extends AppCompatActivity {
+public class OlderProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_volunteer);
+        setContentView(R.layout.activity_older);
     }
 }

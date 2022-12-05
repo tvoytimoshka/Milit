@@ -9,8 +9,7 @@ import android.widget.Button;
 
 import com.example.neighbour.R;
 import com.example.neighbour.ui.utils.TextValidator;
-import com.example.neighbour.ui.volunteer.VolunteerActivity;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.neighbour.ui.volunteer.OrdersNearbyVolunteerActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
 
@@ -47,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            Intent nameIntent = new Intent(this, VolunteerActivity.class);
+            Intent nameIntent = new Intent(this, OrdersNearbyVolunteerActivity.class);
             startActivity(nameIntent);
 
             

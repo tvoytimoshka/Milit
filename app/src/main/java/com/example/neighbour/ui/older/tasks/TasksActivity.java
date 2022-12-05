@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.older;
+package com.example.neighbour.ui.older.tasks;
 
 import android.os.Bundle;
 
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.neighbour.R;
 
-public class OlderActivity extends AppCompatActivity {
+public class TasksActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_older);
+        setContentView(R.layout.activity_tasks);
     }
 }
