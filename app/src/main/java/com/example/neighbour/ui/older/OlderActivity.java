@@ -1,8 +1,10 @@
-package com.example.neighbour;
+package com.example.neighbour.ui.older;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.neighbour.R;
 
 public class OlderActivity extends AppCompatActivity {
 
