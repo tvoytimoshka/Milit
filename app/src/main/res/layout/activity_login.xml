@@ -14,32 +14,21 @@
         app:titleTextColor="#381E72"
         app:title="Авторизация"
         />
-        <TextView
-            android:layout_below="@+id/topAppBar"
-            android:id="@+id/textViewOne"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="64sp"
-            android:text="Привет!"
-            android:textColor="#D0BCFF"
-            android:layout_marginLeft="16dp"/>
 
-        <TextView
-            android:id="@+id/textViewTwo"
-            android:layout_below="@+id/textViewOne"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#D0BCFF"
-            android:textSize="20sp"
-            android:text="Введите email и пароль для входа."
-            android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:layout_below="@+id/topAppBar"
+        android:id="@+id/imageLogin"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/ic_login"
+        android:scaleType="centerCrop"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginEditText"
-        android:layout_below="@+id/textViewTwo"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageLogin"
+        android:layout_marginTop="5dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
