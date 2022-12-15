@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.general;
+package com.example.neighbour.ui.general.settings;
 
 import android.os.Bundle;
 
