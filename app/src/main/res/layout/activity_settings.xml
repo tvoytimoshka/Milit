@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.general.settings.SettingsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:titleTextColor="#381E72"
+        app:title="Настройки"/>
+
+    <TextView
+        android:layout_below="@+id/topAppBar"
+        android:id="@+id/textViewOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Данные"
+        android:textColor="#D0BCFF"/>
+
+    <View
+        android:id="@+id/lineOne"
+        android:layout_below="@+id/textViewOne"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/lineOne"
+        android:id="@+id/textViewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Прочее"
+        android:textColor="#D0BCFF"/>
+
+    <View
+        android:layout_below="@+id/textViewTwo"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        />
+
+
+
+</RelativeLayout>
