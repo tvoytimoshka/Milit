@@ -18,19 +18,16 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout textEmail;
     TextInputLayout textPassword;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AppCompatDelegate.setDefaultNightMode(
                 AppCompatDelegate.MODE_NIGHT_YES);
 
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         Button btnLogin = findViewById(R.id.btnLogin);
-
+        Button btnRegister = findViewById(R.id.btnRegister);
         textEmail = findViewById(R.id.loginEditText);
         textPassword = findViewById(R.id.passwordEditText);
         
@@ -38,8 +35,6 @@ public class LoginActivity extends AppCompatActivity {
             
             String email = textEmail.getEditText().getText().toString();
             String password = textPassword.getEditText().getText().toString();
-
-
 
             if(!validateFields(email, password)){
 
@@ -51,6 +46,9 @@ public class LoginActivity extends AppCompatActivity {
 
             
         });
+
+        btnRegister.setOnClickListener(v -> startActivity(new Intent(this, RegisterActivity.class)));
+
 
     }
 
