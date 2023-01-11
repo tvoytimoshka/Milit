@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.general.settings.SettingsActivity">
+    tools:context=".ui.general.settings.SettingsActivity"
+    >
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
@@ -22,7 +23,8 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="Данные"
-        android:textColor="#D0BCFF"/>
+        android:textColor="#D0BCFF"
+        />
 
     <View
         android:id="@+id/lineOne"
@@ -33,24 +35,13 @@
         android:background="@android:color/white"
         />
 
-
-    <TextView
-        android:layout_below="@+id/lineOne"
-        android:id="@+id/textViewTwo"
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Прочее"
-        android:textColor="#D0BCFF"/>
+        android:layout_below="@+id/textViewOne"
+        android:background="#0"
+        android:text="Местоположение">
 
-    <View
-        android:layout_below="@+id/textViewTwo"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/white"
-        />
-
-
+    </androidx.appcompat.widget.AppCompatButton>
 
 </RelativeLayout>
