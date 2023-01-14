@@ -20,7 +20,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ExecutorActivity"
+            android:name=".ui.volunteer.ProfileExecutorActivity"
             android:exported="false"
             android:label="@string/title_activity_executor">
             <meta-data
