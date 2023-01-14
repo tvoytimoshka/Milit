@@ -3,7 +3,7 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-        android:icon="@drawable/item_profile"
+        android:icon="@drawable/item_tasks"
         android:title="Заказы"/>
     <item
         android:id="@+id/page_2"
