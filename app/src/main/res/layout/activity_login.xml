@@ -12,8 +12,7 @@
         android:layout_height="?attr/actionBarSize"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
         app:titleTextColor="#381E72"
-        app:title="Авторизация"
-        />
+        app:title="Авторизация" />
 
     <ImageView
         android:layout_below="@+id/topAppBar"
@@ -36,7 +35,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="12345"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,7 +55,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:text="1234"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
