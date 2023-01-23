@@ -1,10 +1,14 @@
 package com.example.neighbour.ui.user.tasks;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.neighbour.R;
+import com.google.android.material.textfield.MaterialAutoCompleteTextView;
+
+import java.util.ArrayList;
 
 public class NewTaskActivity extends AppCompatActivity {
 
@@ -13,6 +17,22 @@ public class NewTaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_task);
 
+        MaterialAutoCompleteTextView autoTextViewCategory = findViewById(R.id.autoTextViewCategory);
+
+        // TODO: изменить название категорий для помощи
+
+        String[] categoryArray = new String[] {
+                "Продукты",
+                ""
+        };
+
+        ArrayAdapter<String> categoryAdapter = new ArrayAdapter<>(
+                this,
+                R.layout.menu_dropdown,
+                categoryArray
+        );
+
+        autoTextViewCategory.setAdapter(categoryAdapter);
 
     }
 

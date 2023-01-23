@@ -17,10 +17,9 @@ public class RegisterActivity extends AppCompatActivity {
 
         MaterialAutoCompleteTextView autoTextViewCategory = findViewById(R.id.autoTextViewCategory);
 
-        // TODO: изменить название категориям
         String[] categoryArray = new String[] {
                 "Волонтер",
-                "Бабушка"
+                "Клиент"
         };
 
         ArrayAdapter<String> categoryAdapter = new ArrayAdapter<>(
