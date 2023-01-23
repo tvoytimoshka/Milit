@@ -12,6 +12,42 @@
         android:layout_height="?attr/actionBarSize"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
         app:titleTextColor="#381E72"
-        app:title="Ближайжие заказы для выполнения"/>
+        app:title="Поиск"/>
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ближайжие заказы для выполнения"
+        android:layout_below="@id/topAppBar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/searchText" >
+
+
+        <include
+            android:id="@+id/firstElement"
+            layout="@layout/task_item" />
+
+        <include
+            layout="@layout/task_item" />
+
+        <include
+            layout="@layout/task_item" />
+
+        <include
+            layout="@layout/task_item" />
+
+        <include
+            layout="@layout/task_item" />
+    </LinearLayout>
+
 
 </RelativeLayout>

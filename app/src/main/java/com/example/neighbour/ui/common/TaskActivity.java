@@ -1,16 +1,16 @@
-package com.example.neighbour.ui.user.tasks;
-
-import android.os.Bundle;
+package com.example.neighbour.ui.common;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
 import com.example.neighbour.R;
 
-public class TasksActivity extends AppCompatActivity {
+public class TaskActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tasks);
+        setContentView(R.layout.activity_task);
     }
 }
