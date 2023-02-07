@@ -14,6 +14,4 @@ public class TaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_task);
     }
 
-    // TODO: изменить кнопку
-
 }

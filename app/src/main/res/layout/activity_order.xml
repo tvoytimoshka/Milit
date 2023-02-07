@@ -10,10 +10,44 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:title="Заказ"
         app:titleTextColor="#381E72"
-        app:title="Заказ"/>
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/descriptionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topAppBar"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статус"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваш заказ поступил в обработку"
+            android:textSize="15sp"
+            />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>
