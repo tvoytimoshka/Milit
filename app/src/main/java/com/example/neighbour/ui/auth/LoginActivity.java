@@ -8,9 +8,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.neighbour.R;
-import com.example.neighbour.ui.user.main.MainUserActivity;
 import com.example.neighbour.ui.utils.TextValidator;
-import com.example.neighbour.ui.volunteer.OrdersNearbyVolunteerActivity;
 import com.example.neighbour.ui.volunteer.main.MainVolunteerActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -32,32 +30,25 @@ public class LoginActivity extends AppCompatActivity {
         Button btnRegister = findViewById(R.id.btnRegister);
         textEmail = findViewById(R.id.loginEditText);
         textPassword = findViewById(R.id.passwordEditText);
-        
+
         btnLogin.setOnClickListener(v -> {
-            
+
             String email = textEmail.getEditText().getText().toString();
             String password = textPassword.getEditText().getText().toString();
 
-            if(!validateFields(email, password)){
-
+            if (!validateFields(email, password)) {
                 return;
             }
 
             Intent nameIntent = new Intent(this, MainVolunteerActivity.class);
             startActivity(nameIntent);
-
-            
         });
 
         btnRegister.setOnClickListener(v -> startActivity(new Intent(this, RegisterActivity.class)));
-
-
     }
 
-    private boolean validateFields(String email, String password){
-        TextValidator textValidator = new TextValidator();
-
-        return textValidator.validateText(email, textEmail) & textValidator.validateText(password, textPassword);
+    private boolean validateFields(String email, String password) {
+        return TextValidator.validateText(email, textEmail) & TextValidator.validateText(password, textPassword);
     }
 
 }
