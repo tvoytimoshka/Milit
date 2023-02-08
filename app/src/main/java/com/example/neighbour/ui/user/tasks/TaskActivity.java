@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.user.main;
+package com.example.neighbour.ui.user.tasks;
 
 import androidx.appcompat.app.AppCompatActivity;
 

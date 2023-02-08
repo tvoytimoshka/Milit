@@ -18,12 +18,14 @@ public class FragmentProfile extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
         Button settingsBtn = view.findViewById(R.id.settingsBtn);
         settingsBtn.setOnClickListener(e -> {
-            Intent goToSettings = new Intent( requireActivity(), SettingsUserActivity.class);
+            Intent goToSettings = new Intent(requireActivity(), SettingsUserActivity.class);
             startActivity(goToSettings);
         });
 

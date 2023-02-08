@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.neighbour.R;
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 
 import java.util.ArrayList;
@@ -19,11 +20,11 @@ public class NewTaskActivity extends AppCompatActivity {
 
         MaterialAutoCompleteTextView autoTextViewCategory = findViewById(R.id.autoTextViewCategory);
 
-        // TODO: изменить название категорий для помощи
+        //TODO: изменить название категорий для помощи
 
         String[] categoryArray = new String[] {
                 "Продукты",
-                ""
+                "Помощь"
         };
 
         ArrayAdapter<String> categoryAdapter = new ArrayAdapter<>(
@@ -33,6 +34,9 @@ public class NewTaskActivity extends AppCompatActivity {
         );
 
         autoTextViewCategory.setAdapter(categoryAdapter);
+
+        MaterialToolbar topNewTask = findViewById(R.id.topNewTask);
+        topNewTask.setNavigationOnClickListener(v -> onBackPressed());
 
     }
 

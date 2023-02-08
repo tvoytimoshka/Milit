@@ -5,14 +5,17 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.neighbour.R;
-import com.example.neighbour.ui.user.main.TaskActivity;
+import com.example.neighbour.ui.user.tasks.NewTaskActivity;
+import com.example.neighbour.ui.user.tasks.TaskActivity;
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class TasksFragment extends Fragment {
 
@@ -29,6 +32,12 @@ public class TasksFragment extends Fragment {
             startActivity(goToTask);
         });
 
+        //TODO: поправить вылет
+        FloatingActionButton addNewTask = view.findViewById(R.id.addNewTasks);
+        addNewTask.setOnClickListener(b -> {
+            Intent goToNewTask = new Intent(this.requireActivity(), NewTaskActivity.class);
+            startActivity(goToNewTask);
+        });
 
         return view;
     }
