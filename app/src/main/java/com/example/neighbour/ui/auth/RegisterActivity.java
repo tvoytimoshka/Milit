@@ -2,7 +2,6 @@ package com.example.neighbour.ui.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 
@@ -16,15 +15,12 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.util.Objects;
+
 public class RegisterActivity extends AppCompatActivity {
 
-    TextInputLayout textName;
-    TextInputLayout textLustName;
-    TextInputLayout textNumberPhone;
-    TextInputLayout textEmail;
-    TextInputLayout textPassword;
-    TextInputLayout textPasswordConfirmation;
-
+    private TextInputLayout textName, textLustName, textNumberPhone,
+            textEmail, textPassword, textPasswordConfirmation, textInputCategory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         MaterialToolbar registerTopAppBar = findViewById(R.id.registerTopAppBar);
-        TextInputLayout textInputCategory = findViewById(R.id.textInputCategory);
+        textInputCategory = findViewById(R.id.textInputCategory);
         MaterialAutoCompleteTextView autoTextViewCategory = findViewById(R.id.autoTextViewCategory);
         Button btnLogin = findViewById(R.id.btnLogin);
 
@@ -43,23 +39,23 @@ public class RegisterActivity extends AppCompatActivity {
         textPassword = findViewById(R.id.passwordEditText);
         textPasswordConfirmation = findViewById(R.id.passwordRepeatEditText);
 
-
         initAutoText(autoTextViewCategory);
-
 
         registerTopAppBar.setNavigationOnClickListener(v -> onBackPressed());
 
         btnLogin.setOnClickListener(v -> {
-            //todo: добавить валидацию на пустоту
+            String name = Objects.requireNonNull(textName.getEditText()).getText().toString();
+            String lustName = Objects.requireNonNull(textLustName.getEditText()).getText().toString();
+            String numberPhone = Objects.requireNonNull(textNumberPhone.getEditText()).getText().toString();
+            String email = Objects.requireNonNull(textEmail.getEditText()).getText().toString();
+            String password = Objects.requireNonNull(textPassword.getEditText()).getText().toString();
+            String passwordConfirmation = Objects.requireNonNull(textPasswordConfirmation.getEditText()).getText().toString();
+            String category = Objects.requireNonNull(textInputCategory.getEditText()).getText().toString();
 
-            String name = textName.getEditText().getText().toString();
-            String lustName = textLustName.getEditText().getText().toString();
-            String numberPhone = textNumberPhone.getEditText().getText().toString();
-            String email = textEmail.getEditText().getText().toString();
-            String password = textPassword.getEditText().getText().toString();
-            String passwordConfirmation = textPasswordConfirmation.getEditText().getText().toString();
-
-            String category = textInputCategory.getEditText().getText().toString();
+            if (!validateFields(name, lustName, numberPhone,
+                    email, password, passwordConfirmation, category)) {
+                return;
+            }
 
             if (category.equals("Волонтер")) {
                 startActivity(new Intent(this, MainVolunteerActivity.class));
@@ -68,12 +64,6 @@ public class RegisterActivity extends AppCompatActivity {
             if (category.equals("Клиент")) {
                 startActivity(new Intent(this, MainUserActivity.class));
             }
-
-            if (!validateFields(name, lustName, numberPhone,
-                    email, password, passwordConfirmation)) {
-                return;
-            }
-
         });
 
     }
@@ -87,13 +77,15 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private boolean validateFields(String name, String lustName, String numberPhone,
-                                   String email, String password, String passwordConfirmation) {
+                                   String email, String password, String passwordConfirmation,
+                                   String category) {
         return TextValidator.validateText(name, textName) &
                 TextValidator.validateText(lustName, textLustName) &
                 TextValidator.validateText(numberPhone, textNumberPhone) &
                 TextValidator.validateText(email, textEmail) &
                 TextValidator.validateText(password, textPassword) &
-                TextValidator.validateText(passwordConfirmation, textPasswordConfirmation);
+                TextValidator.validateText(passwordConfirmation, textPasswordConfirmation) &
+                TextValidator.validateText(category, textInputCategory);
     }
 
 }
