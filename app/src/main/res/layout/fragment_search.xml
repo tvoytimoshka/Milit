@@ -7,7 +7,7 @@
     tools:context=".ui.volunteer.main.fragments.FragmentSearch">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/topAppBar"
+        android:id="@+id/topTaskAppBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ближайжие заказы для выполнения"
-        android:layout_below="@id/topAppBar"
+        android:layout_below="@id/topTaskAppBar"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="10dp"

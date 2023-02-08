@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/topAppBar"
+        android:id="@+id/topTaskAppBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -15,7 +15,7 @@
         app:title="Авторизация" />
 
     <ImageView
-        android:layout_below="@+id/topAppBar"
+        android:layout_below="@+id/topTaskAppBar"
         android:id="@+id/imageLogin"
         android:layout_width="match_parent"
         android:layout_height="170dp"

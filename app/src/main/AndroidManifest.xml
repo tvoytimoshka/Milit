@@ -18,7 +18,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.common.TaskActivity"
+            android:name=".ui.user.main.TaskActivity"
             android:exported="false" />
 
         <activity
