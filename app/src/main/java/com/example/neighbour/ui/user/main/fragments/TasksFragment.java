@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +13,6 @@ import androidx.fragment.app.Fragment;
 import com.example.neighbour.R;
 import com.example.neighbour.ui.user.tasks.NewTaskActivity;
 import com.example.neighbour.ui.user.tasks.TaskActivity;
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class TasksFragment extends Fragment {
@@ -26,13 +24,12 @@ public class TasksFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tasks, container, false);
 
-        View firstElement = view.findViewById(R.id.firstElement);
+        View firstElement = view.findViewById(R.id.firstElementUser);
         firstElement.setOnClickListener(v -> {
             Intent goToTask = new Intent(requireActivity(), TaskActivity.class);
             startActivity(goToTask);
         });
 
-        //TODO: поправить вылет
         FloatingActionButton addNewTask = view.findViewById(R.id.addNewTasks);
         addNewTask.setOnClickListener(b -> {
             Intent goToNewTask = new Intent(this.requireActivity(), NewTaskActivity.class);

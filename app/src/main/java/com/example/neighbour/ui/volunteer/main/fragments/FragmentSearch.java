@@ -20,7 +20,7 @@ public class FragmentSearch extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_search, container , false);
 
-        View firstElement = view.findViewById(R.id.firstElement);
+        View firstElement = view.findViewById(R.id.firstElementUser);
         firstElement.setOnClickListener(v -> {
             Intent goToTask = new Intent(requireActivity(), OrderActivity.class);
             startActivity(goToTask);
