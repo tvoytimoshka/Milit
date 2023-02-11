@@ -33,7 +33,7 @@
 
 
         <include
-            android:id="@+id/firstElement"
+            android:id="@+id/firstElementSearch"
             layout="@layout/task_item" />
 
         <include
