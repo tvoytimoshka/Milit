@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.volunteer.OrderActivity">
+    tools:context=".ui.volunteer.TaskActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topTaskAppBar"
@@ -17,7 +17,7 @@
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/orderCard"
+        android:id="@+id/taskStatusCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/topTaskAppBar"
@@ -25,29 +25,144 @@
         app:cardCornerRadius="10dp"
         app:strokeWidth="1dp">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:padding="20dp">
 
             <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Статус"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_below="@id/statusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заказ выполнен"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/taskNameCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskStatusCard"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Статус"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название заявки"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_below="@id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Категория:"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/categoryNameTextView"
+                android:layout_below="@id/categoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название категории"/>
+
+            <TextView
+                android:id="@+id/commentTextView"
+                android:layout_below="@id/categoryNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание: ...."/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/informationTaskCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskNameCard"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/informationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Информацуия о клиенте"
+                android:textStyle="bold"
+                android:textSize="20sp"
             />
 
             <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ваш заказ поступил в обработку"
-            android:textSize="15sp"
+                android:id="@+id/fullNameTextView"
+                android:layout_below="@id/informationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фамилия имя отчество"
+                android:textSize="15sp"
             />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/conctactTextView"
+                android:layout_below="@id/fullNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Контактные данные"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_below="@+id/conctactTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+7 999 999 99-99"/>
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_below="@+id/phoneTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"/>
+
+        </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_below="@id/informationTaskCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Помощь"
+        android:textColor="#1F1F1F"
+        />
 
 </RelativeLayout>

@@ -4,8 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topProfile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Профиль"
+        app:titleTextColor="#381E72"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
     <Button
         android:id="@+id/settingsBtn"
+        android:layout_below="@id/topProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Настройки" />

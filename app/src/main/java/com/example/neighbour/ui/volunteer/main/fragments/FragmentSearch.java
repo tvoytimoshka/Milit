@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.neighbour.R;
-import com.example.neighbour.ui.volunteer.OrderActivity;
+import com.example.neighbour.ui.volunteer.TaskActivity;
 
 public class FragmentSearch extends Fragment {
 
@@ -22,7 +22,7 @@ public class FragmentSearch extends Fragment {
 
         View firstElement = view.findViewById(R.id.firstElementSearch);
         firstElement.setOnClickListener(v -> {
-            Intent goToTask = new Intent(requireActivity(), OrderActivity.class);
+            Intent goToTask = new Intent(requireActivity(), TaskActivity.class);
             startActivity(goToTask);
         });
 
