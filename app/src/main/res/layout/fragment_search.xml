@@ -37,16 +37,12 @@
             layout="@layout/task_item" />
 
         <include
-            layout="@layout/task_item" />
+            layout="@layout/task_item_second" />
 
         <include
             layout="@layout/task_item" />
 
-        <include
-            layout="@layout/task_item" />
 
-        <include
-            layout="@layout/task_item" />
     </LinearLayout>
 
 

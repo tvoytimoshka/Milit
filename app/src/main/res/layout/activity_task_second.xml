@@ -8,7 +8,7 @@
     tools:context=".ui.volunteer.TaskActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolTaskAppBar"
+        android:id="@+id/topTaskAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -20,7 +20,7 @@
         android:id="@+id/taskStatusCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolTaskAppBar"
+        android:layout_below="@id/topTaskAppBar"
         android:layout_margin="12dp"
         app:cardCornerRadius="10dp"
         app:strokeWidth="1dp">
@@ -34,7 +34,7 @@
                 android:id="@+id/statusTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Статус вашего заказа"
+                android:text="Статус"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
@@ -116,7 +116,7 @@
                 android:id="@+id/informationTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Информация о волонтёре"
+                android:text="Информацуия о клиенте"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 />
@@ -126,7 +126,7 @@
                 android:layout_below="@id/informationTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Тимофей Митенёв Владимирович"
+                android:text="Иван Иванов Иванович"
                 android:textSize="15sp"
                 />
 

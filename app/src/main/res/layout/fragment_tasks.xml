@@ -36,12 +36,9 @@
         <include
             android:id="@+id/firstElementUser"
             layout="@layout/task_item" />
+
         <include
-            layout="@layout/task_item" />
-        <include
-            layout="@layout/task_item" />
-        <include
-            layout="@layout/task_item" />
+            layout="@layout/task_item_second" />
 
     </LinearLayout>
 

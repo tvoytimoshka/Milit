@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_tasks"
-        android:name="com.example.neighbour.ui.user.main.fragments.TasksFragment"
+        android:name="com.example.neighbour.ui.user.main.fragments.FragmentTasks"
         android:label="TasksFragment"
         tools:layout="@layout/fragment_tasks" />
 

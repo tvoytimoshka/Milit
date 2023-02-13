@@ -15,7 +15,7 @@ import com.example.neighbour.ui.user.tasks.NewTaskActivity;
 import com.example.neighbour.ui.user.tasks.TaskActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class TasksFragment extends Fragment {
+public class FragmentTasks extends Fragment {
 
     @Nullable
     @Override

@@ -14,7 +14,7 @@ public class TaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task);
 
-        MaterialToolbar taskToolbar = findViewById(R.id.taskToolbar);
+        MaterialToolbar taskToolbar = findViewById(R.id.toolTaskAppBar);
         taskToolbar.setNavigationOnClickListener(v -> onBackPressed());
 
     }
