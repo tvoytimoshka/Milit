@@ -38,6 +38,7 @@
             layout="@layout/task_item" />
 
         <include
+            android:id="@+id/secondElementUser"
             layout="@layout/task_item_second" />
 
     </LinearLayout>

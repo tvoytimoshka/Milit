@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.neighbour.R;
 import com.example.neighbour.ui.user.tasks.NewTaskActivity;
 import com.example.neighbour.ui.user.tasks.TaskActivity;
+import com.example.neighbour.ui.user.tasks.TaskSecondActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FragmentTasks extends Fragment {
@@ -28,6 +29,12 @@ public class FragmentTasks extends Fragment {
         firstElement.setOnClickListener(v -> {
             Intent goToTask = new Intent(requireActivity(), TaskActivity.class);
             startActivity(goToTask);
+        });
+
+        View secondElement = view.findViewById(R.id.secondElementUser);
+        secondElement.setOnClickListener(v -> {
+            Intent goToSecondTask = new Intent(requireActivity(), TaskSecondActivity.class);
+            startActivity(goToSecondTask);
         });
 
         FloatingActionButton addNewTask = view.findViewById(R.id.addNewTasks);

@@ -147,10 +147,11 @@
 
             <TextView
                 android:id="@+id/emailTextView"
-                android:layout_below="@+id/phoneTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="email@example.com"/>
+                android:layout_below="@+id/phoneTextView"
+                android:layout_marginTop="0dp"
+                android:text="email@example.com" />
 
         </RelativeLayout>
 
