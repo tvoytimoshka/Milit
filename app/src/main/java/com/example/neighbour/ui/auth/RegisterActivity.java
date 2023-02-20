@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.neighbour.R;
-import com.example.neighbour.ui.user.main.MainUserActivity;
+import com.example.neighbour.ui.user.tasks.main.MainUserActivity;
 import com.example.neighbour.ui.utils.TextValidator;
 import com.example.neighbour.ui.volunteer.main.MainVolunteerActivity;
 import com.google.android.material.appbar.MaterialToolbar;

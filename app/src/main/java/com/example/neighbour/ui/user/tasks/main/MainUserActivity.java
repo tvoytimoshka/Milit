@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.user.main;
+package com.example.neighbour.ui.user.tasks.main;
 
 import android.os.Bundle;
 

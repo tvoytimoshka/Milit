@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.user.main.fragments;
+package com.example.neighbour.ui.user.tasks.main.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

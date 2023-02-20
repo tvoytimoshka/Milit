@@ -85,14 +85,14 @@
                 android:layout_below="@id/categoryTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Продукты"/>
+                android:text="Помощь"/>
 
             <TextView
                 android:id="@+id/commentTextView"
                 android:layout_below="@id/categoryNameTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Описание: купите продукты"/>
+                android:text="Описание: Помогите собрать шкаф"/>
 
         </RelativeLayout>
 
@@ -126,7 +126,7 @@
                 android:layout_below="@id/informationTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Иван Иванов Иванович"
+                android:text="Иван Иванов"
                 android:textSize="15sp"
                 />
 
@@ -155,17 +155,5 @@
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>
-
-    <Button
-        android:id="@+id/help"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/informationTaskCard"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
-        android:text="Помощь"
-        android:textColor="#1F1F1F" />
 
 </RelativeLayout>

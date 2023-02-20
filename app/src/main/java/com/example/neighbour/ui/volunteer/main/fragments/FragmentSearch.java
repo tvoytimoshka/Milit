@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.neighbour.R;
 import com.example.neighbour.ui.volunteer.TaskActivity;
+import com.example.neighbour.ui.volunteer.TaskSecondActivity;
 
 public class FragmentSearch extends Fragment {
 
@@ -24,6 +25,12 @@ public class FragmentSearch extends Fragment {
         firstElement.setOnClickListener(v -> {
             Intent goToTask = new Intent(requireActivity(), TaskActivity.class);
             startActivity(goToTask);
+        });
+
+        View secondElement = view.findViewById(R.id.secondElementSearch);
+        secondElement.setOnClickListener(v -> {
+            Intent goToSecondTask = new Intent(requireActivity(), TaskSecondActivity.class);
+            startActivity(goToSecondTask);
         });
 
         return view;

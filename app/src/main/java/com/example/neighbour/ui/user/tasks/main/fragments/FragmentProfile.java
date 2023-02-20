@@ -1,4 +1,4 @@
-package com.example.neighbour.ui.user.main.fragments;
+package com.example.neighbour.ui.user.tasks.main.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,11 +23,11 @@ public class FragmentProfile extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        Button settingsBtn = view.findViewById(R.id.settingsBtn);
-        settingsBtn.setOnClickListener(e -> {
-            Intent goToSettings = new Intent(requireActivity(), SettingsUserActivity.class);
-            startActivity(goToSettings);
-        });
+//        Button settingsBtn = view.findViewById(R.id.settingsBtn);
+//        settingsBtn.setOnClickListener(e -> {
+//            Intent goToSettings = new Intent(requireActivity(), SettingsUserActivity.class);
+//            startActivity(goToSettings);
+//        });
 
 
 

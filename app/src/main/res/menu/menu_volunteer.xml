@@ -7,7 +7,7 @@
     <item
         android:id="@+id/nav_map"
         android:icon="@drawable/item_two"
-        android:title="Карта" />
+        android:title="Местоположение" />
     <item
         android:id="@+id/nav_profile_volunteer"
         android:icon="@drawable/item_profile"

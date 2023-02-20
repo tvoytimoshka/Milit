@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.neighbour.R;
-import com.example.neighbour.ui.user.main.MainUserActivity;
 import com.example.neighbour.ui.utils.TextValidator;
 import com.example.neighbour.ui.volunteer.main.MainVolunteerActivity;
 import com.google.android.material.textfield.TextInputLayout;
@@ -41,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            Intent nameIntent = new Intent(this, MainUserActivity.class);
+            Intent nameIntent = new Intent(this, MainVolunteerActivity.class);
             startActivity(nameIntent);
         });
 

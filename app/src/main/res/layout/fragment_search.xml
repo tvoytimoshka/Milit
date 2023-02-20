@@ -37,10 +37,9 @@
             layout="@layout/task_item" />
 
         <include
+            android:id="@+id/secondElementSearch"
             layout="@layout/task_item_second" />
 
-        <include
-            layout="@layout/task_item" />
 
 
     </LinearLayout>
