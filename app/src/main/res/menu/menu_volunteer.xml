@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_search"
-        android:icon="@drawable/item_tasks"
+        android:icon="@drawable/outline_menu_book_24"
         android:title="Поиск" />
     <item
         android:id="@+id/nav_map"
-        android:icon="@drawable/item_two"
+        android:icon="@drawable/outline_map_24"
         android:title="Местоположение" />
     <item
         android:id="@+id/nav_profile_volunteer"
-        android:icon="@drawable/item_profile"
+        android:icon="@drawable/baseline_person_outline_24"
         android:title="Профиль" />
 </menu>

@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.neighbour.R;
+import com.example.neighbour.ui.user.tasks.main.MainUserActivity;
 import com.example.neighbour.ui.utils.TextValidator;
 import com.example.neighbour.ui.volunteer.main.MainVolunteerActivity;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.Objects;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -33,14 +36,14 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(v -> {
 
-            String email = textEmail.getEditText().getText().toString();
-            String password = textPassword.getEditText().getText().toString();
+            String email = Objects.requireNonNull(textEmail.getEditText()).getText().toString();
+            String password = Objects.requireNonNull(textPassword.getEditText()).getText().toString();
 
             if (!validateFields(email, password)) {
                 return;
             }
 
-            Intent nameIntent = new Intent(this, MainVolunteerActivity.class);
+            Intent nameIntent = new Intent(this, MainUserActivity.class);
             startActivity(nameIntent);
         });
 
