@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_tasks"
-        android:name="com.example.neighbour.ui.user.tasks.main.fragments.FragmentTasks"
+        android:name="com.foxy.milit.ui.user.main.fragments.FragmentHomeUser"
         android:label="TasksFragment"
-        tools:layout="@layout/fragment_tasks" />
+        tools:layout="@layout/fragment_home_user" />
 
     <fragment
         android:id="@+id/nav_location"
-        android:name="com.example.neighbour.ui.user.tasks.main.fragments.FragmentLocation"
+        android:name="com.foxy.milit.ui.user.main.fragments.FragmentLocation"
         android:label="LocationFragment"
         tools:layout="@layout/fragment_location" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.neighbour.ui.user.tasks.main.fragments.FragmentProfile"
+        android:name="com.foxy.milit.ui.user.main.fragments.FragmentProfileUser"
         android:label="ProfileFragment"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile_user" />
 </navigation>
