@@ -116,7 +116,7 @@
                 android:id="@+id/informationTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Информацуия о клиенте"
+                android:text="Информация о волонтёре"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 />
@@ -126,7 +126,7 @@
                 android:layout_below="@id/informationTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Иван Иванов"
+                android:text="Тимофей Митенёв Владимирович"
                 android:textSize="15sp"
                 />
 
@@ -147,10 +147,11 @@
 
             <TextView
                 android:id="@+id/emailTextView"
-                android:layout_below="@+id/phoneTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="email@example.com"/>
+                android:layout_below="@+id/phoneTextView"
+                android:layout_marginTop="0dp"
+                android:text="email@example.com" />
 
         </RelativeLayout>
 

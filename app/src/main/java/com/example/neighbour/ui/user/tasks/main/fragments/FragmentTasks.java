@@ -37,11 +37,6 @@ public class FragmentTasks extends Fragment {
             startActivity(goToSecondTask);
         });
 
-        FloatingActionButton addNewTask = view.findViewById(R.id.addNewTasks);
-        addNewTask.setOnClickListener(b -> {
-            Intent goToNewTask = new Intent(this.requireActivity(), NewTaskActivity.class);
-            startActivity(goToNewTask);
-        });
 
         return view;
     }
