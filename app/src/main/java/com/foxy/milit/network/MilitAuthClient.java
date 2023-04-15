@@ -10,7 +10,7 @@ public class MilitAuthClient {
     public static Retrofit getAuthClient() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://BASE_URL.com")
+                    .baseUrl("http://10.0.2.2:8080/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }

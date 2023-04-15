@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 
 public interface IAuth {
 
-    @POST("/auth/register")
-    Call<Message> register(@Body User user);
+    @POST("auth/register")
+    Call<User> register(@Body User user);
 
 }

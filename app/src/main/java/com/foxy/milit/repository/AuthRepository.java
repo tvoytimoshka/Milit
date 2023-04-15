@@ -9,6 +9,7 @@ import com.foxy.milit.model.user.User;
 import com.foxy.milit.model.utils.Message;
 import com.foxy.milit.network.IAuth;
 import com.foxy.milit.network.MilitAuthClient;
+import com.foxy.milit.ui.utils.CustomCallback;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,24 +25,25 @@ public class AuthRepository {
         authInterface = MilitAuthClient.getAuthClient().create(IAuth.class);
     }
 
-    public MutableLiveData<Message> register(User user) {
-        MutableLiveData<Message> message = new MutableLiveData<>();
+    public MutableLiveData<User> register(User user, CustomCallback<User> customCallback) {
+        MutableLiveData<User> liveData = new MutableLiveData<>();
 
-        authInterface.register(user).enqueue(new Callback<Message>() {
+        authInterface.register(user).enqueue(new Callback<User>() {
             @Override
-            public void onResponse(@NonNull Call<Message> call, @NonNull Response<Message> response) {
-                if(response.isSuccessful()) {
-                    message.setValue(response.body());
-                }
+            public void onResponse(@NonNull Call<User> call, @NonNull Response<User> response) {
+                Log.d(TAG, "onResponse: " + response.code());
+                liveData.setValue(response.body());
+                customCallback.onSuccess(response.body());
             }
 
             @Override
-            public void onFailure(@NonNull Call<Message> call, @NonNull Throwable t) {
-                Log.e(TAG, "onFailure: auth: ", t);
+            public void onFailure(@NonNull Call<User> call, @NonNull Throwable t) {
+                liveData.setValue(null);
+                customCallback.onFailure(t);
             }
         });
 
-        return message;
+        return liveData;
     }
 
 

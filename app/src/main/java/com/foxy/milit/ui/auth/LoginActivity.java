@@ -1,5 +1,7 @@
 package com.foxy.milit.ui.auth;
 
+import static com.foxy.milit.ui.utils.TextValidator.validateText;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -44,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private boolean validateFields(String email, String password) {
-        return TextValidator.validateText(email, binding.loginEditText) & TextValidator.validateText(password, binding.passwordEditText);
+        return validateText(email, binding.loginEditText) & validateText(password, binding.passwordEditText);
     }
 
 }
