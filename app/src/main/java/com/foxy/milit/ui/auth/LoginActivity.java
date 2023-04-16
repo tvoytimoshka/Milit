@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 import com.foxy.milit.databinding.ActivityLoginBinding;
 import com.foxy.milit.ui.user.main.MainUserActivity;
 import com.foxy.milit.ui.utils.TextValidator;
+import com.foxy.milit.ui.volunteer.main.MainVolunteerActivity;
 
 import java.util.Objects;
 
@@ -38,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            Intent nameIntent = new Intent(this, MainUserActivity.class);
+            Intent nameIntent = new Intent(this, MainVolunteerActivity.class);
             startActivity(nameIntent);
         });
 
